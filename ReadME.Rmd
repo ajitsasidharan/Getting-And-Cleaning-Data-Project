@@ -74,3 +74,15 @@ activity_name: Descriptive name of each subject's activity Type: Factor Values: 
 
 subject_id : Identifier, identifying each subject Type: Integer Values: 1 : 30
 
+Code organization
+---
+
+Steps performed
+
+* Get the data file from the     URLhttp://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+* This data file contains test and train data.
+* Merge the test data and train data.
+* Specify the activity name based on the activity_labels.txt
+* Once the data is merged, from the complete data set, select only those columns that provide mean and standard deviation.
+* Clean the column names of the data set.
+* Create a tidy data set with average of each variable for each activity and subject.
