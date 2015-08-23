@@ -74,7 +74,3 @@ tidyData    = aggregate(finalData[,names(finalData) != c('Activity ID','Subject 
 finalTidyData <- merge(activity_labels,tidyData,by.x="Activity ID",by.y="Activity ID",all=TRUE)
 # Export the tidyData set 
 write.table(finalTidyData, './tidyData.txt',row.names=TRUE,sep='\t');
-
-
-write.table(mean_data,"./tidy_movement_data.txt")
-
